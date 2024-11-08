@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lato", serif;
+    font-size: 1rem;
+}
+.header{
+    display: flex;
+    }
+.navbar-1, .navbar-2{
+    width: 100vw;
+    height: 55px;
+    display: flex;
+    align-items: center;
+
+}
+.navbar-2{
+    margin-left: 200px;
+}
+.menu-icon-logo{
+    display: flex;
+    margin-left: 1rem;
+    padding: 0;
+    color: #6F6F6F;
+    margin-right: 0.4rem;
+}
+
+.logo {
+    height: 30px;
+    width: auto;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.search-bar{
+    width: 26.5vw;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 1.3px;
+    background-color: white;
+}
+.search-bar input {
+    width: 100%;
+    
+    font-size: 1em;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.icons img{
+    width: 24px;
+    height: auto;
+    margin-left: 30px;
+}
+.icons a{
+    margin-left: 15px;
+    color: #515151;
+    text-decoration: none;
+}
+
+
+
+/* Banner Image ----------------------------------------------------*/
+.banner{
+    background-image: url(/images/home-top-banner-3.jpg); /* Replace with the correct path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 490px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+   
+}
+.banner h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.banner p {
+    color: white;
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    text-align: center;
+
+}
+
+
+.search-bar-2{
+    min-width: 47vw;
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    background-color: white;
+}
+.search-bar-2 input {
+    width: 100%;
+    padding: 0.7rem 0 0.7rem 0.4rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar-2 button{
+    width: 12vw;
+    border: #E02F13;
+    margin: 0.1rem;
+   border-radius: 0.2rem;
+   background-color: #E02F13;
+   color: white;
+   cursor: pointer;
+}
+
+
+
+/* MEDIA QUERY -----------------------------------------------------*/
+
+@media (max-width: 500px) {
+    .menu-icon-logo{
+        display: flex;
+    }
+    .search-bar, .icons{
+        display: none;
+    }
+    .search-icon{
+        background-image: url("icons8-search 30px.svg");
+        width: 30px;
+        height: 30px;
+        
+    }
+    /* .search-and-location-icon{
+        display: flex;  
+        justify-content: end;
+        align-items: center;
+    }
+    */
+    
+    
+    /* Banner --------------------*/
+    .banner{
+        width: 100%;
+    }
+    .banner p{
+        font-size: 0.9rem;
+    }
+    .search-button{
+        display: none;
+    }
+}
+
+/* Featured bike */
+.featured-bike{
+    margin-left: 10vw;
+    margin-right: 10vw; 
+}
+.featured-bike p{
+    margin-top: 2vw;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.featured-bike ul{
+    display: flex; /* Aligns items in a row */
+    list-style: none;
+    font-size: 0.85rem;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    gap: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.box-container{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.box{
+    width: 320px;
+    height: 325px;
+    border: 1px solid #ddd;
+    margin-top: 14px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #F9F9F9;
+}
+.box img {
+    width: 100%;
+    display: block;
+}
+.box-content{
+    height: 100%;
+    background-color: #F9F9F9;
+}
+.card-title{
+    padding: 10px;
+}
+.price{
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.subtitle{
+    font-size: 0.82rem;
+    margin-bottom: 15px;
+    padding-left: 10px;
+
+}
+.button{
+    border: 1px solid #03857A;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 6px 10px 6px 10px;
+    margin-left: 10px;
+    color: #03857A;
+}
+a{
+    text-decoration: none;
+    color: #0679B6;
+    
+}
+
+/* Popular Bikes */
+
+.box-container-2{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.s-box{
+    width: 236px;
+    height: 230px;
+    border: 1px solid #ddd;
+    margin-top: 8px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #F9F9F9;
+}
+.s-box img {
+    width: 100%;
+    display: block;
+}
+.box-content{
+    height: 100%;
+    background-color: #F9F9F9;
+    font-size: 0.9rem;
+}
+.box-container-2 hr{
+margin: 0 10px 6px 10px;
+}
+.box-container-2 a{
+    text-decoration: none;
+    color: #0679B6;
+    font-weight: 600;
+    border: none;
+    margin-left: 10px;
+}
