@@ -72,7 +72,7 @@ body{
 
 /* Banner Image ----------------------------------------------------*/
 .banner{
-    background-image: url(/images/home-top-banner-3.jpg); /* Replace with the correct path to your image */
+    background-image: url(/Bike-Wale-Clone/images/home-top-banner-3.jpg); /* Replace with the correct path to your image */
     background-size: cover;
     background-position: center;
     height: 490px;
