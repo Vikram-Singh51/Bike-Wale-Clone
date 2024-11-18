@@ -1,7 +1,12 @@
 *{
+    
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+html, body{
+    overflow-x: hidden;
+    max-width: 100%;
 }
 body{
     font-family: "Lato", serif;
@@ -11,14 +16,14 @@ body{
     display: flex;
     }
 .navbar-1, .navbar-2{
-    width: 100vw;
+    width: 100%;
     height: 55px;
     display: flex;
     align-items: center;
 
 }
 .navbar-2{
-    margin-left: 200px;
+   
 }
 .menu-icon-logo{
     display: flex;
@@ -72,9 +77,10 @@ body{
 
 /* Banner Image ----------------------------------------------------*/
 .banner{
-    background-image: url(/Bike-Wale-Clone/images/home-top-banner-3.jpg); /* Replace with the correct path to your image */
+    background-image: url(/images/home-top-banner-3.jpg); /* Replace with the correct path to your image */
     background-size: cover;
     background-position: center;
+    max-width: 100%;
     height: 490px;
     display: flex;
     flex-wrap: wrap;
@@ -82,6 +88,7 @@ body{
     justify-content: flex-end;
     align-items: center;
     color: white;
+    
    
 }
 .banner h4{
@@ -133,7 +140,7 @@ body{
 /* Featured bike ------------------------------------------------*/
 
 p,ul,hr{
-    margin: 1vw 4vw 1vw 4vw;
+    margin: 20px 20px 2px 20px;
     font-size: 1.4rem;
     font-weight: 700;
     cursor: pointer;
@@ -148,15 +155,15 @@ p,ul,hr{
     gap: 15px;
     font-weight: 600;
     cursor: pointer;
+    overflow: hidden;
 }
 .box-container{
     display: flex;
     padding: 20px;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    max-width: 100%;
     justify-content: space-around;
     flex-wrap: wrap;
-    
+    overflow: hidden;
 }
 .box{
     width: 320px;
@@ -166,6 +173,7 @@ p,ul,hr{
     border-radius: 6px;
     overflow: hidden;
     background-color: #F9F9F9;
+    overflow: hidden;
 }
 .box img {
     width: 100%;
@@ -206,10 +214,11 @@ a{
 
 .box-container-2{
     display: flex;
-    gap: 20px;
+    max-width: 100%;
     padding: 20px;
     justify-content: space-around;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 .s-box{
     width: 236px;
@@ -219,6 +228,7 @@ a{
     border-radius: 6px;
     overflow: hidden;
     background-color: #F9F9F9;
+    overflow: hidden;
 }
 .s-box img {
     width: 100%;
@@ -249,6 +259,7 @@ margin: 0 10px 6px 10px;
 .footer {
     background-color: #002B50;
     color: #ffffff;
+   /* padding: 40px 5%;*/
     padding: 20px 150px 20px 150px;
     text-align: center;
   }
