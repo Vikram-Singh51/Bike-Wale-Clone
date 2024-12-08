@@ -75,7 +75,7 @@ body{
 
 /* Banner Image ----------------------------------------------------*/
 .banner{
-    background-image: url(/Bike-Wale-Clone/images/home-top-banner-3.jpg); /* Replace with the correct path to your image */
+    background-image: url(https://imgd.aeplcdn.com/0X0/bw/static/landing-banners/d/home-top-banner-4.jpg?v=30117&q=80); /* Replace with the correct path to your image */
     background-size: cover;
     background-position: center;
     max-width: 100%;
