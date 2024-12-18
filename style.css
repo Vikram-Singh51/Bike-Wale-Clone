@@ -254,99 +254,109 @@ margin: 0 10px 6px 10px;
 
 
 /* Footer *--------------------------------------------------*/
-.footer {
-    background-color: #002B50;
+/* General Footer Styles */
+
+footer {
+    background-color: rgb(0,43,81);
     color: #ffffff;
-   /* padding: 40px 5%;*/
-    padding: 20px 150px 20px 150px;
+    padding: 20px 0;
     text-align: center;
-  }
-  .section{
-    display: flex;
 }
-  .english{
-    margin-left: 10px;
-    text-decoration: none;
-    color: white;
-  }
-  .hindi{
-    margin-left: 15px;
-    text-decoration: none;
-    color: white;
-  }
-  .about-us{
-    margin-left: 150px;
-    text-decoration: none;
-    color: white;
-  }
-  .advertise{
-    margin-left: 150px;
-    text-decoration: none;
-    color: white;
-  }
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
 
-
-  .footer-top,
-  .footer-middle,
-  .footer-bottom{
+/* Footer Top Section */
+.footer-top {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px 0;
-  }
-  
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.footer-top a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.footer-top a:hover {
+    text-decoration: underline;
+}
 
-  .footer-column,
-  .footer-brands {
-    gap: 15px;
-  }
-  
-  .footer-section a,
-  .footer-column h4,
-  .footer-brands a {
+/* Social Media Section */
+.social-section {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.social-heading1{
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 10px;
+}
+.social-heading2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+.social-icons a {
+    color: #ffffff;
+    font-size: 27px;
+    margin: 0 10px;
+    text-decoration: none;
+
+}
+
+.social-icons a:hover {
+    color: #1da1f2; /* Highlight color */
+}
+
+.apple{
+    width: 100px;
+    
+}
+.playstore{
+    width: 110px;
+    margin-left: 10px;
+}
+
+
+/* Partners Section */
+.partners {
+    margin: 20px 0;
+}
+.partners a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+.partners a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid #4a4a4a;
+    padding-top: 10px;
+    font-size: 12px;
+}
+.footer-bottom a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .footer-column h4 {
-    color: #8495A8; 
-    padding-bottom: 15px;
-  }
+    margin-left: 10px;
+}
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
 
-  
-  .social-icons{
-   
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-   
-   gap: 10px;
-   
-  
-  }
-  
-  .app-store{
-    width: 100px;
-    margin-right: 20px;
-  }
-  .play-store{
-    width: 110px;
-  }
-  
-  .footer-divider {
-    border: o.5px solid #ffffff;
-    margin: 15px 0;
-  }
-  
-  .footer-bottom a {
-    margin-right: 15px;
-    font-size: 14px;
-  }
-  
-  .footer-bottom p {
-    margin-top: 10px;
-    font-size: 12px;
-  }
 
 
 /* MEDIA QUERY -----------------------------------------------------*/
@@ -373,7 +383,18 @@ margin: 0 10px 6px 10px;
     
     /* Banner --------------------*/
     .banner{
+        background-image: url(/images/ban1.png);
         width: 100%;
+        background-size: cover;
+        /* background-position: center; */
+        /* max-width: 100%; */
+        /* height: 490px; */
+        /* display: flex;
+        flex-wrap: wrap; */
+        /* flex-direction: column;
+        justify-content: flex-end;
+        align-items: center; */
+        /* color: white; */
     }
     .banner p{
         font-size: 0.9rem;
@@ -394,19 +415,35 @@ margin: 0 10px 6px 10px;
         font-size: 12px;
         margin-top: 10px;
     }
+    .social-icons, .app-icons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Footer ----------------------------*/ 
+    .social-section{
+        display: inline-block;
+    }
+    .social-heading1{
+        margin-left: 15px;
+    }
+    .social-heading2{
+        margin-top: 20px;
+    }
+    .app-download{
+        margin: 0;
+        text-decoration: none; 
+        display: inline-block;
+        justify-content: center;
+    }
+    .social-icons{
+        margin: 0;
+        text-decoration: none; 
+        display: inline-block;
+        justify-content: center;
+    }
+
 }
-  
-  
-
-
-
-
-
-
-
-
-
-
 
 
 
