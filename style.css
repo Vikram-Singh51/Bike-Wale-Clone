@@ -317,14 +317,9 @@ footer {
 .social-icons a:hover {
     color: #1da1f2; /* Highlight color */
 }
-
-.apple{
-    width: 100px;
-    
-}
-.playstore{
-    width: 110px;
-    margin-left: 10px;
+.app-download a{
+    font-size: 40px;
+    margin: 0 15px;
 }
 
 
