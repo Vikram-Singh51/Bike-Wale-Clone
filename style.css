@@ -378,7 +378,7 @@ footer {
     
     /* Banner --------------------*/
     .banner{
-        background-image: url(/Bike-Wale-Clone/ban1.png);
+        background-image: url(/public/ban1.png);
         width: 100%;
         background-size: cover;
         /* background-position: center; */
